@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking con Javascript</title>
+</head>
+
+<body>
+    <form id="inicio">
+        <h1>Ingresar</h1>
+        <label for="user">Usuario:</label>
+        <input type="text" id="user" name="user" required>
+        <br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" id="pass" name="pass" required>
+        <br>
+        <button type="submit" id="ingresar">Ingresar</button>
+        <!-- Importante que el button sea type submit para enviar los datos -->
+    </form>
+
+    <form id="operaciones" style="display: none;">
+        <h1>Operaciones</h1>
+        <!-- Importante ocultarlo al principio con display none -->
+        <h3 id="info">Selecciona una opción</h3>
+        <br>
+        <button type="submit" id="consulta">Consultar saldo</button>
+        <button type="submit" id="ingresar">Ingresar monto</button>
+        <button type="submit" id="retirar">Retirar monto</button>
+        <button type="submit" id="salir">Salir</button>
+        <!-- Importante que el button sea type submit para enviar los datos -->
+    </form>
+
+    <script src="./ingreso.js"></script>
+    <script src="./cuentas-de-usuarios.js"></script>
+    <script src="./operaciones.js"></script>
+
+
+
+</body>
+
+</html>
